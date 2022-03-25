@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ABRASCOPEI</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/logo.png" sizes="16x16">
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32"> -->
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96"> -->
+
+	<!-- Google Fonts CSS Stylesheet // More here http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,600italic,700,800,800italic" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- ***** Boostrap Custom / Addons Stylesheets ***** -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/sliders/circular-catalogue/circular-catalogue.css" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/css/sliders/css3-panels/css3-panels.css" type="text/css" media="all">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/sliders/revolution-slider/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/sliders/revolution-slider/layers.css">			
+	<link rel="stylesheet" type="text/css" href="assets/css/sliders/revolution-slider/navigation.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display%3A700italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed%3A700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto%3A300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+	<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="assets/css/template.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/knowledge.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/base-sizing.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
+	<script type="text/javascript" src="assets/js/modernizr.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9&appId=516644248530385";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <app-root></app-root>
+
+  <a href="#" id="totop">Topo</a>
+	<style>
+    .scrolloff {
+        pointer-events: none;
+    }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
+        
+        $('#overlay').on("mouseup",function(){          // lock it when mouse up
+            $('#map').addClass('scrolloff'); 
+            //somehow the mouseup event doesn't get call...
+        });
+        $('#overlay').on("mousedown",function(){        // when mouse down, set the mouse events free
+            $('#map').removeClass('scrolloff');
+        });
+
+        $("#map").mouseleave(function () {              // becuase the mouse up doesn't work... 
+            $('#map').addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                        // or you can do it on some other event
+        });
+        
+    });
+</script>
+ 
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/kl-plugins.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+	<script type="text/javascript" src="assets/js/trigger/slider/caroufredsel/circular-catalogue/kl-circular-catalogue.js"></script>
+  <script  type="text/javascript" src="assets/js/plugins/scrollme/jquery.scrollme.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/_sliders/revolution-slider/extensions/revolution.extension.video.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+	<script type="text/javascript" src="assets/js/trigger/kl-recent-work-carousel.js"></script>
+	<script type="text/javascript" src="assets/js/trigger/kl-recent-work-carousel2.js"></script>
+	<script type="text/javascript" src="assets/js/trigger/kl-recent-work-carousel3.js"></script>
+
+	<script type="text/javascript">
+		var tpj = jQuery;
+
+		var revapi40;
+		tpj(document).ready(function() {
+			if (tpj("#rev_slider_40_1").revolution == undefined) {
+				revslider_showDoubleJqueryError("#rev_slider_40_1");
+			} else {
+				revapi40 = tpj("#rev_slider_40_1").show().revolution({
+					sliderType: "standard",
+					sliderLayout: "fullscreen",
+					dottedOverlay: "none",
+					delay: 8000,
+					navigation: {
+						keyboardNavigation: "off",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation: "off",
+						mouseScrollReverse: "default",
+						onHoverStop: "off",
+						touch: {
+							touchenabled: "on",
+							swipe_threshold: 75,
+							swipe_min_touches: 50,
+							swipe_direction: "horizontal",
+							drag_block_vertical: false
+						},
+						bullets: {
+							enable: true,
+							hide_onmobile: true,
+							hide_under: 800,
+							style: "zeus",
+							hide_onleave: false,
+							direction: "horizontal",
+							h_align: "center",
+							v_align: "bottom",
+							h_offset: 0,
+							v_offset: 30,
+							space: 5,
+							tmp: '<span class="tp-bullet-image"></span><span class="tp-bullet-imageoverlay"></span><span class="tp-bullet-title">{{title}}</span>'
+						},
+            arrows: {
+            enable: true,
+            style: 'hesperiden',
+            tmp: '',
+            rtl: false,
+            hide_onleave: false,
+            hide_onmobile: true,
+            hide_under: 0,
+            hide_over: 9999,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            }
+ 
+					},
+					responsiveLevels: [1240, 1024, 778, 480],
+					visibilityLevels: [1240, 1024, 778, 480],
+					gridwidth: [1240, 1024, 778, 480],
+					gridheight: [868, 768, 960, 720],
+					lazyType: "none",
+					parallax: {
+						type: "scroll",
+						origo: "slidercenter",
+						speed: 1000,
+						levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+						type: "scroll",
+					},
+					shadow: 0,
+					spinner: "off",
+					/*stopLoop: "on",
+					stopAfterLoops: 0,
+					stopAtSlide: 1,*/
+					shuffle: "off",
+					autoHeight: "off",
+					sliderLayout: 'auto',
+					fullScreenAutoWidth: "off",
+					fullScreenAlignForce: "off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "20%",
+					disableProgressBar: "off",
+					hideThumbsOnMobile: "off",
+					hideSliderAtLimit: 0,
+					hideCaptionAtLimit: 0,
+					hideAllCaptionAtLilmit: 0,
+					
+					debugMode: false,
+					fallbacks: {
+						simplifyAll: "off",
+						nextSlideOnWindowFocus: "off",
+						disableFocusListener: false,
+					}
+				});
+			}
+		}); /*ready*/
+	</script>
+ 
+	<script type="text/javascript" src="assets/js/kl-scripts.js" DEFER="DEFER"></script>
+	<script type="text/javascript" src="assets/js/kl-custom.js"></script>
+
+	<script type="text/javascript">
+		Modernizr.load([
+			{
+				// test for media query support, if not load respond.js
+				test : Modernizr.mq('only all'),
+				// If not, load the respond.js file
+				nope : '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
+			}
+		]);
+	</script>
+ <script type='text/javascript'>
+(function(){ var widget_id = 'kOq0keNyAP';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+
+
+
+</body>
+</html>
